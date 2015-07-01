@@ -10,19 +10,43 @@ body {
 	background-color: #fafafa;
 	padding: 20px;
 }
-p {
-	line-height: 200%;
-	margin-bottom: 30px;
+p, li {
+	line-height: 200%;	
+	font-size: 17px;
 }
 
-.main-content p {
-	font-size: 17px;
+p, h3 {
+	margin-bottom: 20px;
+}
+
+ul {
+	margin-bottom: 20px;
+}
+
+.first-list-element {
+	margin-top: -15px;
+}
+
+.last-list-element{
+	/*margin-bottom: 10px;*/
+}
+
+@media (max-width: 400px) {
+	p{
+		line-height: 180%;
+		margin-bottom: 15px;
+		font-size: 16px;		
+	}
+}
+
+footer p {
+	font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6, nav li {
 	font-family: 'Merriweather Sans', sans-serif;
 }
-/*END FONTS*/
+/*END FONTS, LINE HEIGHTS ETC*/
 
 /*LINKS*/
 a {
@@ -84,12 +108,12 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 3.5em;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 /*On really small screens, make sure the masthead isn't too huge*/
-@media (max-width: 360px) {
+@media (max-width: 400px) {
 	.masthead {
-		font-size: 2.5em;
+		font-size: 2.7em;
 		margin-bottom: 20px;
 	}
 }
@@ -111,6 +135,8 @@ footer {
 
 /*GENERALLY USEFUL STYLE RULES*/
 /*STANDARD BOTTOM BORDER*/
-.standard-bottom-border {
+.section {
 	border-bottom: solid #e7e7e7 1px;
+	margin-bottom: 5px;
+	padding-top: 10px;
 }
